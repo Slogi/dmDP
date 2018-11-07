@@ -4,14 +4,13 @@ import java.awt.Point;
 
 public class Rectangle extends Forme{
 
-	private Point premierPoint;
-	private Point deuxiemePoint;
+	private Point supgauche;
+	private Point infdroit;
 	
-	public Rectangle(Point premierPoint, Point deuxiemePoint) {
+	public Rectangle(Point supgauche, Point infdroit) {
 		
-		
-		this.premierPoint = premierPoint;
-		this.deuxiemePoint = deuxiemePoint;
+		this.supgauche = supgauche;
+		this.infdroit = infdroit;
 		
 	}
 	
@@ -20,8 +19,8 @@ public class Rectangle extends Forme{
 		if (true ) { // TO DO - Remplacer true par la vérification du déplacement
 			
 			Point distance = new Point ((int)(pointArrive.getX() - pointDepart.getX()), (int) (pointArrive.getY() - pointDepart.getY()));
-			this.premierPoint = new Point((int)(this.premierPoint.getX() + distance.getX()),(int)(this.premierPoint.getY()+ distance.getY()));
-			this.deuxiemePoint = new Point((int)(this.deuxiemePoint.getX() + distance.getX()),(int)(this.deuxiemePoint.getY()+ distance.getY()));
+			this.supgauche = new Point((int)(this.supgauche.getX() + distance.getX()),(int)(this.supgauche.getY()+ distance.getY()));
+			this.infdroit = new Point((int)(this.infdroit.getX() + distance.getX()),(int)(this.infdroit.getY()+ distance.getY()));
 
 		}
 		return false;
