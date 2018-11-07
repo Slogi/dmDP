@@ -4,18 +4,18 @@ import java.util.ArrayList;
 
 public class Plateau {
 	
-	private ArrayList<Forme> listFormesInitiales = new ArrayList<>();
-	private ArrayList<Forme> listeFormes = new ArrayList<>();
+	private ArrayList<Forme> listeObstacles = new ArrayList<>();
+	private ArrayList<Forme> listeFormesPerso = new ArrayList<>();
 	
 	public Plateau (int nombreFormes) {
 		
 	}
 	
-	public void ajouterFormesInitiales(Forme forme) {
-		this.listFormesInitiales.add(forme);
+	public void ajouterObstacles(Forme forme) {
+		this.listeObstacles.add(forme);
 	}
 	
-	public void ajouterFormes (Forme forme) {
-		this.listeFormes.add(forme);
+	public void ajouterFormesPerso (Forme forme) {
+		this.listeFormesPerso.add(forme);
 	}
 }
