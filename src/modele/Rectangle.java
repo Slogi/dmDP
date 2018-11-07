@@ -26,6 +26,11 @@ public class Rectangle extends Forme{
 		return false;
 	}
 
+	@Override
+	public String getNomClasse() {
+		return "Rectangle";
+	}
+
 	
 
 }

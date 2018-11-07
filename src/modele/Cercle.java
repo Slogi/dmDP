@@ -29,6 +29,10 @@ public class Cercle extends Forme{
 		this.rayon=r;
 		this.fireChangement();
 	}
+	@Override
+	public String getNomClasse() {
+		return "Cercle";
+	}
 
 	
 

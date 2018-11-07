@@ -2,11 +2,11 @@ package modele;
 
 import java.awt.Point;
 
-public class PointImpl extends Forme {
+public class Triangle extends Forme {
 
 	private Point point;
 	
-	public PointImpl(Point point) {
+	public Triangle(Point point) {
 		this.point = point;
 	}
 	public boolean deplacer(Point pointDepart, Point pointArrive) {
@@ -17,6 +17,10 @@ public class PointImpl extends Forme {
 
 		}
 		return false;
+	}
+	@Override
+	public String getNomClasse() {
+		return "Triangle";
 	}
 
 }
