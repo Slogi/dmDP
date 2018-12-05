@@ -2,7 +2,7 @@ package controleur;
 
 import java.awt.event.MouseEvent;
 
-public class ControleurCercle extends ControleurSouris{
+public class ControleurPoint extends ControleurSouris{
 
 	@Override
 	public void mouseClicked(MouseEvent arg0) {
@@ -46,4 +46,5 @@ public class ControleurCercle extends ControleurSouris{
 		
 	}
 
+	
 }

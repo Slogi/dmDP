@@ -1,11 +1,9 @@
 package controleur;
 
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
 
-public abstract class ControleurSouris implements MouseMotionListener, MouseListener {
-		
+public abstract class ControleurSouris {
+	
 	public abstract void mouseClicked(MouseEvent arg0);
 
 	public abstract void mouseEntered(MouseEvent arg0);
