@@ -1,6 +1,6 @@
 package vue;
 
-public class PlateauViewBasic implements PlateauView {
+public class PlateauViewBasic extends PlateauView {
 
 	@Override
 	public void paint() {
