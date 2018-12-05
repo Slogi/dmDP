@@ -1,6 +1,7 @@
 package vue;
 
-public interface PlateauView {
+public abstract class PlateauView extends View{
 	
-	public void paint();
+	public abstract void paint();
+
 }
